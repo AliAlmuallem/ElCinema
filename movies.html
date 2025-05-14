@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - ElCinema</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/logo-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="index.html" class="logo-container">
+                    <img src="images/Elcinema_Logo.png" alt="ElCinema Logo" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul class="rounded-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="movies.html">Movies</a></li>
+                    <li><a href="showtimes.html">Showtimes</a></li>
+                    <li><a href="tvseries.html">TV Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="movies-hero">
+        <div class="hero-content">
+            <h1>Movie Guide</h1>
+            <p>Discover Eveything you Want to now About Movies</p>
+        </div>
+    </section>
+
+    <section id="movies-content">
+        <div class="container">
+            <div class="movies-main">
+                <!-- Now Showing -->
+                <section class="movies-section" id="now-showing">
+                    <div class="section-header">
+                        <h2><i class="fas fa-film"></i> Now Showing</h2>
+                        <div class="view-all">View All</div>
+                    </div>
+                    
+                    <div class="movie-filter">
+                        <button class="filter-btn active" data-filter="all">All Movies</button>
+                        <button class="filter-btn" data-filter="action">Action</button>
+                        <button class="filter-btn" data-filter="drama">Drama</button>
+                        <button class="filter-btn" data-filter="comedy">Comedy</button>
+                        <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+                    </div>
+                    
+                    <div class="movies-grid">
+                        <div class="movie-card action">
+                            <img src="images/thunderboltsposter.jpg" alt="Thunderbolts">
+                            <div class="movie-overlay">
+                                <h3>Thunderbolts</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <button class="btn-watchlist">+ Watchlist</button>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card drama">
+                            <img src="images/sinnerposter.jpg" alt="Sinner">
+                            <div class="movie-overlay">
+                                <h3>Sinner</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 4.0</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <button class="btn-watchlist">+ Watchlist</button>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card comedy">
+                            <img src="images/sikosiko.jpg" alt="Siko Siko">
+                            <div class="movie-overlay">
+                                <h3>Siko Siko</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <button class="btn-watchlist">+ Watchlist</button>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card sci-fi">
+                            <img src="images/minecraftmovie.jpg" alt="A Minecraft Movie">
+                            <div class="movie-overlay">
+                                <h3>A Minecraft Movie</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <button class="btn-watchlist">+ Watchlist</button>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card action">
+                            <img src="images/theaccountant2.jpg" alt="The Accountant 2">
+                            <div class="movie-overlay">
+                                <h3>The Accountant 2</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 4.0</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <button class="btn-watchlist">+ Watchlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+                
+                <!-- Top 5 Movies -->
+                <section class="movies-section" id="top-movies">
+                    <div class="section-header">
+                        <h2><i class="fas fa-trophy"></i> Top 5 Movies</h2>
+                        <div class="view-all">View All</div>
+                    </div>
+                    
+                    <div class="movies-carousel">
+                        <div class="movie-card">
+                            <div class="movie-rank">1</div>
+                            <img src="images/The_Shawshank_Redemption.jpg" alt="The Shawshank Redemption">
+                            <div class="movie-overlay">
+                                <h4>The Shawshank Redemption</h4>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 9.3</span>
+                                    <span class="year">1994</span>
+                                </div>
+        <button class="btn-play" onclick="window.open('https://youtu.be/NmzuHjWmXOc?si=2an2m55T5bahVA6D')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card">
+                            <div class="movie-rank">2</div>
+                            <img src="images/The_Godfather.jpg" alt="The Godfather">
+                            <div class="movie-overlay">
+                                <h4>The Godfather</h4>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 9.2</span>
+                                    <span class="year">1972</span>
+                                </div>
+        <button class="btn-play" onclick="window.open('https://youtu.be/UaVTIH8mujA?si=DXPTVpZqVsROoY1q')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                        <div class="movies-carousel">
+                        <div class="movie-card">
+                            <div class="movie-rank">3</div>
+                            <img src="images/The_Dark_Knight.jpg" alt="The Dark Knight">
+                            <div class="movie-overlay">
+                                <h4>The Dark Knight</h4>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 9.0</span>
+                                    <span class="year">2008</span>
+                                </div>
+        <button class="btn-play" onclick="window.open('https://youtu.be/EXeTwQWrcwY?si=_N4AuzJ44SEAlxb0')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card">
+                            <div class="movie-rank">4</div>
+                            <img src="images/The_Godfather_Part_II.jpg" alt="The Godfather Part II">
+                            <div class="movie-overlay">
+                                <h4>The Godfather Part II</h4>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 9.0</span>
+                                    <span class="year">1974</span>
+                                </div>
+        <button class="btn-play" onclick="window.open('https://youtu.be/9O1Iy9od7-A?si=5UrvLb5xx3O_oNrQ')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-rank">5</div>
+                            <img src="images/12_Angry_Men.jpg" alt="12 Angry Men">
+                            <div class="movie-overlay">
+                                <h4>12 Angry Men</h4>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 9.0</span>
+                                    <span class="year">1957</span>
+                                </div>
+        <button class="btn-play" onclick="window.open('https://youtu.be/TEN-2uTi2c0?si=8BpCBmrX2YrYCcNM')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </section>
+                
+                <!-- Most Popular Movies -->
+                <section class="movies-section" id="popular-movies">
+                    <div class="section-header">
+                        <h2><i class="fas fa-fire"></i> Most Popular Movies</h2>
+                        <div class="view-all">View All</div>
+                    </div>
+                    
+                    <div class="popular-grid">
+                        <div class="popular-card main-card">
+                            <img src="images/Thunderbolts_card.jpg" alt="Thunderbolts">
+                            <div class="popular-overlay">
+                                <h3>Thunderbolts</h3>
+                                <p>Now playing in theaters</p>
+        <button class="btn-play" onclick="window.open('https://youtu.be/v-94Snw-H4o?si=IqhEF5oyVXkNzNwd')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                        
+                        <div class="popular-card">
+                            <img src="images/sinner_card.jpg" alt="Sinners">
+                            <div class="popular-overlay">
+                                <h4>Sinners</h4>
+                                <p>Now playing in theaters</p>
+        <button class="btn-play" onclick="window.open('https://youtu.be/7joulECTx_U?si=0oOu50JApnSx01tG')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                        
+                            <div class="popular-card">
+                            <img src="images/Havoc_card.jpg" alt="Havoc">
+                            <div class="popular-overlay">
+                                <h4>Havoc</h4>
+                                <p>Now playing in theaters</p>
+        <button class="btn-play" onclick="window.open('https://youtu.be/HAQfDRvrU0s?si=VIRsgG4VlRxJ6kHX')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                           <div class="popular-card">
+                            <img src="images/another_simple_favor.jpg" alt="Another Simple Favor">
+                            <div class="popular-overlay">
+                                <h4>Another Simple Favor</h4>
+                                <p>Now playing in theaters</p>
+        <button class="btn-play" onclick="window.open('https://youtu.be/QWajCwdC_TM?si=Q2D_wv6QInDThNoR')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                          <div class="popular-card">
+                            <img src="images/the_accountant_2_card.jpg" alt="The Accountant 2">
+                            <div class="popular-overlay">
+                                <h4>The Accountant 2</h4>
+                                <p>Now playing in theaters</p>
+        <button class="btn-play" onclick="window.open('https://youtu.be/3wRCOqyDI6E?si=zvS0-AMtkq8RKAP8')">
+            <i class="fas fa-play"></i> Watch Trailer
+        </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <aside class="movies-sidebar">
+                <section class="movies-section" id="movie-news">
+                    <div class="section-header">
+                        <h2><i class="fas fa-newspaper"></i> Movie News</h2>
+                        <div class="view-all">View All</div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <article class="news-card">
+                            <div class="news-image" style="background-image: url('images/James-Bond-007.jpg')"></div>
+                            <div class="news-content">
+                                <h4>New James Bond Movie Announced</h4>
+                                <p class="news-date">May 20, 2025</p>
+                                <p class="news-excerpt">The producers reveal plans for the next installment in the iconic franchise...</p>
+                                <a href="https://www.euronews.com/culture/2025/03/21/new-james-bond-film-fast-tracked-by-amazon-release-date-and-budget-revealed" class="news-link">Read More</a>
+                            </div>
+                        </article>
+
+                    <div class="news-list">
+                        <article class="news-card">
+                            <div class="news-image" style="background-image: url('images/batman-news.jpg')"></div>
+                            <div class="news-content">
+                                <h4>The 5 Best New Batman Adventures Episodes, Ranked</h4>
+                                <p class="news-date">May 12, 2025</p>
+                                <p class="news-excerpt">From the Joker becoming a millionaire to the origin story of Harley Quinn, here are the five best episodes of The New Batman Adventures.</p>
+                                <a href="https://collider.com/the-new-batman-adventures-best-episodes-ranked-imdb/" class="news-link">Read More</a>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </section>
+                
+                <!-- Coming Soon Section -->
+                <section class="movies-section" id="coming-soon">
+                    <div class="section-header">
+                        <h2><i class="fas fa-calendar-alt"></i> Coming Soon</h2>
+                    </div>
+                    
+                    <div class="coming-list">
+                        <div class="coming-card">
+                            <img src="images/Coming_soon_1.jpg" alt="Final Destination: Bloodlines">
+                            <div class="coming-details">
+                                <h4>Final Destination: Bloodlines</h4>
+                                <p>Release Date: 15 May 2025 Language: English </p>
+                            </div>
+                        </div>
+                        
+                        <div class="coming-card">
+                            <img src="images/Coming_soon_2.jpg" alt="Fakhr Al Suwaidi">
+                            <div class="coming-details">
+                                <h4>Fakhr Al Suwaidi</h4>
+                                <p>Release Date: 15 May 2025 Language: Arabic </p>
+                            </div>
+                        </div>
+                            <div class="coming-card">
+                            <img src="images/hurry_up_tomorrow.jpg" alt="Hurry Up Tomorrow">
+                            <div class="coming-details">
+                                <h4>Hurry Up Tomorrow</h4>
+                                <p>Release Date: 15 May 2025 Language: English </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <!-- Special Events -->
+                <div class="events-card">
+                    <h3>Special Events</h3>
+                    <p>Join us for our weekly classic movie nights every Wednesday at 7 PM. This week: <strong>The Godfather</strong></p>
+                    <p>Student discounts available every Thursday with valid ID.</p>
+                </div>
+                                <div class="events-card">
+                    <h3>Special Events</h3>
+                    <p>Join us for our weekly Superhero movie nights every Thursday at 9 PM. This week: <strong>Thunderbolts</strong></p>
+                    <p>Student discounts available every Thursday with valid ID.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+<footer class="modern-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <h2><span class="highlight">El</span>Cinema</h2>
+                <p>Arab Filmmakers Portal since 2008</p>
+                <div class="footer-social">
+        <a href="https://x.com/elCinema" aria-label="X">
+            <img src="images/X-Logo.png" alt="X" class="social-logo">
+        </a>
+        <a href="https://www.facebook.com/elCinemaEgypt/" aria-label="Facebook">
+            <img src="images/facebook-logo.png" alt="Facebook" class="social-logo">
+        </a>
+        <a href="https://www.instagram.com/elcinemagram/" aria-label="Instagram">
+            <img src="images/instgaram-logo.png" alt="Instagram" class="social-logo">
+        </a>
+        <a href="https://www.youtube.com" aria-label="YouTube">
+            <img src="images/youtube-logo.png" alt="YouTube" class="social-logo">
+        </a>
+                </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="movies.html"><i class="fas fa-film"></i> Movies</a></li>
+                    <li><a href="showtimes.html"><i class="fas fa-calendar-alt"></i> Showtimes</a></li>
+                    <li><a href="tvseries.html"><i class="fas fa-tv"></i> TV Series</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest updates</p>
+                <form class="footer-subscribe">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="https://elcinema.com/en/privacy_policy/">Privacy Policy</a>
+                <a href="https://elcinema.com/en/faq/index/"> Frequently Asked Questions</a>
+                <a href="https://elcinema.com/en/copyrights/"> Copyright</a>
+            </div>
+            <p>&copy; 2025 ElCinema. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<button id="backToTopBtn" class="back-to-top" title="Go to top">
+  <i class="fas fa-arrow-up">Top</i>
+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
